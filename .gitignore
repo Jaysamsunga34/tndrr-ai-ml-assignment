@@ -1,0 +1,17 @@
+# Environments & Python
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Large model weights, GGUFs, and training checkpoints
+*.gguf
+*.bin
+*.safetensors
+!task1_finetuning/results/lora_adapter/adapter_model.safetensors
+task1_finetuning/results/checkpoints/
+task1_finetuning/results/lora_adapter/tokenizer.json
+task3_optimization/models/
+models/
+.cache/
+huggingface_cache/

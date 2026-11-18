@@ -1,0 +1,25 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "vector_index": "FAISS IndexFlatIP (Cosine Similarity)",
+  "num_questions": 15,
+  "config_a_256": {
+    "chunk_size": 256,
+    "overlap": 50,
+    "total_chunks": 115,
+    "total_questions": 15,
+    "recall_at_1": 0.6666666666666666,
+    "recall_at_5": 0.9333333333333333,
+    "mrr": 0.7888888888888889,
+    "avg_latency_ms": 3.5326639811197915
+  },
+  "config_b_512": {
+    "chunk_size": 512,
+    "overlap": 50,
+    "total_chunks": 68,
+    "total_questions": 15,
+    "recall_at_1": 0.6666666666666666,
+    "recall_at_5": 0.8666666666666667,
+    "mrr": 0.75,
+    "avg_latency_ms": 3.1700929005940757
+  }
+}

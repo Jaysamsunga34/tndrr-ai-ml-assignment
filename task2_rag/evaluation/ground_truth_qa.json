@@ -1,0 +1,137 @@
+[
+  {
+    "id": "q01",
+    "question": "What are the four high-level functions that compose the AI RMF Core?",
+    "expected_answer": "The AI RMF Core is composed of four functions: GOVERN, MAP, MEASURE, and MANAGE.",
+    "gold_passage": "the Core is composed of four functions: GOVERN, MAP, MEASURE, and MANAGE.",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 25,
+    "section": "5. AI RMF Core"
+  },
+  {
+    "id": "q02",
+    "question": "Why is the GOVERN function considered a cross-cutting function in the NIST AI RMF?",
+    "expected_answer": "GOVERN is a cross-cutting function infused throughout AI risk management that enables the other functions; aspects like compliance and evaluation should be integrated into each of the other functions over an AI system's lifespan.",
+    "gold_passage": "GOVERN is a cross-cutting function that is infused throughout AI risk management and enables the other functions of the process.",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 27,
+    "section": "5.1 Govern"
+  },
+  {
+    "id": "q03",
+    "question": "How does information gathered in the MAP function support downstream risk management decisions?",
+    "expected_answer": "Information gathered while carrying out the MAP function enables negative risk prevention and informs decisions for model management and initial appropriateness of an AI solution, serving as the basis for MEASURE and MANAGE.",
+    "gold_passage": "The information gathered while carrying out the MAP function enables negative risk prevention and informs decisions for processes such as model management",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 30,
+    "section": "5.2 Map"
+  },
+  {
+    "id": "q04",
+    "question": "What methodologies does the MEASURE function employ to assess and monitor AI risks?",
+    "expected_answer": "The MEASURE function employs quantitative, qualitative, or mixed-method tools, techniques, and methodologies to analyze, assess, benchmark, and monitor AI risk and related impacts.",
+    "gold_passage": "The MEASURE function employs quantitative, qualitative, or mixed-method tools, techniques, and methodologies to analyze, assess, benchmark, and monitor AI risk",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 33,
+    "section": "5.3 Measure"
+  },
+  {
+    "id": "q05",
+    "question": "What are the key characteristics of trustworthy AI systems listed in the NIST AI RMF?",
+    "expected_answer": "Trustworthy AI systems are valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy enhanced, and fair with their harmful biases managed.",
+    "gold_passage": "valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy enhanced, and fair with their harmful biases managed.",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 8,
+    "section": "Executive Summary / Overview"
+  },
+  {
+    "id": "q06",
+    "question": "How does NIST distinguish between transparency, explainability, and interpretability?",
+    "expected_answer": "Transparency answers 'what happened' in the system, explainability answers 'how' a decision was made, and interpretability addresses why an AI system made a prediction in context.",
+    "gold_passage": "Transparency can answer the question of “what happened” in the system. Explainability can answer the question of “how” a decision was made",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 22,
+    "section": "3.5 Explainable and Interpretable"
+  },
+  {
+    "id": "q07",
+    "question": "What are the three major categories of AI bias identified by NIST?",
+    "expected_answer": "The three major categories of AI bias are systemic, computational and statistical, and human-cognitive.",
+    "gold_passage": "NIST has identified three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive.",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 23,
+    "section": "3.7 Fair – with Harmful Bias Managed"
+  },
+  {
+    "id": "q08",
+    "question": "How does the NIST AI RMF define 'risk tolerance' and what standard is it adapted from?",
+    "expected_answer": "Risk tolerance refers to an organization's or AI actor's readiness to bear risk in order to achieve its objectives, adapted from ISO GUIDE 73.",
+    "gold_passage": "Risk tolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the risk in order to achieve its objectives.",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 12,
+    "section": "1.2.2 Risk Tolerance"
+  },
+  {
+    "id": "q09",
+    "question": "What action does NIST recommend when an AI system presents unacceptable negative risk levels such as imminent severe harms?",
+    "expected_answer": "Development and deployment should cease in a safe manner until risks can be sufficiently managed.",
+    "gold_passage": "development and deployment should cease in a safe manner until risks can be sufficiently managed.",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 13,
+    "section": "1.2.3 Risk Prioritization"
+  },
+  {
+    "id": "q10",
+    "question": "What practical approaches are recommended for AI safety risk management across the lifecycle?",
+    "expected_answer": "Rigorous simulation and in-domain testing, real-time monitoring, and the ability to shut down, modify, or have human intervention when systems deviate from expected functionality.",
+    "gold_passage": "Other practical approaches for AI safety often relate to rigorous simulation and in-domain testing, real-time monitoring, and the ability to shut down, modify, or have human intervention",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 20,
+    "section": "3.2 Safe"
+  },
+  {
+    "id": "q11",
+    "question": "What is required under subcategory MEASURE 2.6 regarding safety risk evaluations?",
+    "expected_answer": "The AI system must be evaluated regularly for safety risks identified in MAP, demonstrated to be safe with residual negative risk not exceeding risk tolerance, and able to fail safely beyond its knowledge limits.",
+    "gold_passage": "MEASURE 2.6: The AI system is evaluated regularly for safety risks",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 35,
+    "section": "Table 3: MEASURE 2.6"
+  },
+  {
+    "id": "q12",
+    "question": "What mechanisms must be included in post-deployment AI system monitoring plans under MANAGE 4.1?",
+    "expected_answer": "Mechanisms for capturing and evaluating input from users and AI actors, appeal and override, decommissioning, incident response, recovery, and change management.",
+    "gold_passage": "MANAGE 4.1: Post-deployment AI system monitoring plans are implemented, including mechanisms for capturing and evaluating input from users",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 38,
+    "section": "Table 4: MANAGE 4.1"
+  },
+  {
+    "id": "q13",
+    "question": "Which 2022 OECD publication was Figure 2 (Lifecycle and Key Dimensions of an AI System) modified from?",
+    "expected_answer": "Modified from OECD (2022) OECD Framework for the Classification of AI systems — OECD Digital Economy Papers.",
+    "gold_passage": "Modified from OECD (2022) OECD Framework for the Classification of AI systems — OECD Digital Economy Papers.",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 15,
+    "section": "Figure 2 Caption"
+  },
+  {
+    "id": "q14",
+    "question": "Which ISO standard does the NIST AI RMF cite when defining organizational social responsibility?",
+    "expected_answer": "ISO 26000:2010.",
+    "gold_passage": "transparent and ethical behavior” (ISO 26000:2010).",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 7,
+    "section": "Introduction / Footnote"
+  },
+  {
+    "id": "q15",
+    "question": "What specific tasks are performed during TEVV for the design, planning, and data phases according to Appendix A?",
+    "expected_answer": "TEVV tasks for design, planning, and data center on internal and external validation of assumptions for system design, data collection, and measurements relative to the intended deployment context.",
+    "gold_passage": "TEVV tasks for design, planning, and data may center on internal and external validation of assumptions for system design",
+    "source_doc": "NIST.AI.100-1.pdf",
+    "page_num": 41,
+    "section": "Appendix A: TEVV Tasks"
+  }
+]

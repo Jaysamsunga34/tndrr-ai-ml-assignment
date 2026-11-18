@@ -1,0 +1,31 @@
+{
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "num_test_samples": 68,
+  "baseline_metrics": {
+    "total_samples": 68,
+    "json_validity_rate": 1.0,
+    "exact_match_accuracy": 0.0,
+    "category_accuracy": 0.20588235294117646,
+    "priority_accuracy": 0.5147058823529411,
+    "intent_accuracy": 0.0,
+    "category_macro_f1": 0.0691358024691358,
+    "priority_macro_f1": 0.37263099219620954,
+    "intent_macro_f1": 0.0
+  },
+  "finetuned_metrics": {
+    "total_samples": 68,
+    "json_validity_rate": 1.0,
+    "exact_match_accuracy": 0.3235294117647059,
+    "category_accuracy": 0.75,
+    "priority_accuracy": 0.7794117647058824,
+    "intent_accuracy": 0.5147058823529411,
+    "category_macro_f1": 0.5380513206600163,
+    "priority_macro_f1": 0.774829931972789,
+    "intent_macro_f1": 0.3295031055900621
+  },
+  "delta": {
+    "exact_match_gain": 0.3235294117647059,
+    "json_validity_gain": 0.0,
+    "intent_acc_gain": 0.5147058823529411
+  }
+}

@@ -1,0 +1,4034 @@
+[
+  {
+    "input": "Quick low-priority question for your team: we need the official tax invoice and receipt for fiscal year 2025.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? outgoing webhook events are silently dropped without retries.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? clicking the email activation link says invalid cryptographic signature.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "EMERGENCY: your REST endpoint returns malformed JSON with missing closing brackets. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the Slack alert integration stopped posting after yesterday's update.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: I want to replace my expired Mastercard with our new corporate Visa.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Please prioritize this request — search query latency has spiked to over 15 seconds per request.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Critical incident happening now: confidential files were downloaded by a former employee's disabled account. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Please prioritize this request — I was billed twice for the single-seat monthly plan.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because need to update my admin email address to our new corporate domain. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? runaway browser memory usage is causing Chrome tabs to crash.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the resend verification email button is greyed out on signup.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: a spoofed lookalike domain is sending malicious links to our customers.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because search query latency has spiked to over 15 seconds per request.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because permanently delete my user account and purge all stored PII. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the password reset token expired immediately and the link won't load.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? close our organization account and wipe all telemetry logs.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because locked out of my user login after 3 wrong attempts and need a reset.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? I want to replace my expired Mastercard with our new corporate Visa.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "All hands needed immediately — POST /auth/token returns 403 Forbidden even with freshly rotated keys. Production impact is severe.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Please prioritize this request — a login alert from a Tor exit node just fired on our root admin account.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because my credit card was declined during monthly checkout.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the PDF download link for invoice INV-9042 is missing.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "All hands needed immediately — an attacker has an active session in our admin console right now. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because still waiting on my returned purchase credit from last month.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, I want to replace my expired Mastercard with our new corporate Visa.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because your chatbot doesn't understand my issue, please connect me to a human.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, need to update my admin email address to our new corporate domain.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? please escalate this thread to a real person who can call me back.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? I forgot my master password and the recovery email never arrives.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "EMERGENCY: our CISO needs an official security patch and exposure attestation report. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? my credit card was declined during monthly checkout.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the PostgreSQL read replica is lagging 12 hours behind primary writes.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? our Zapier webhook throws connection refused continuously.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Please prioritize this request — requesting a formal disclosure on whether our tenant was hit by the recent CVE.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? stop my recurring annual renewal before it charges.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: requesting a formal disclosure on whether our tenant was hit by the recent CVE.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: we spotted an RBAC role bypass exposing private records on a public route.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the subscription payment keeps failing with error code 4002.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because we were overcharged by 20% on the latest enterprise bill. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: search query latency has spiked to over 15 seconds per request.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: I was billed twice for the single-seat monthly plan.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? I lost my authenticator phone and don't have backup SMS codes.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Critical incident happening now: your REST endpoint returns malformed JSON with missing closing brackets. Please treat as P0!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? we were overcharged by 20% on the latest enterprise bill.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because what is the overage pricing structure once we exceed 1M API calls. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? autopay failed and my account banner now says past due.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because revoke write permissions for contractor accounts on our project. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: do you offer non-profit or academic discounts on annual plans.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because we keep receiving HTTP 500 internal server errors when calling /v1/ingest.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "EMERGENCY: we spotted an RBAC role bypass exposing private records on a public route. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: impossible travel alert showed logins from Tokyo and London 5 minutes apart.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: how much does the enterprise tier cost for 500 developer seats.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, please consider adding automated weekly PDF summary exports by email.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? we keep receiving HTTP 500 internal server errors when calling /v1/ingest.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Please prioritize this request — autopay failed and my account banner now says past due.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "EMERGENCY: someone changed my login email and linked an unknown device from overseas. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the PostgreSQL read replica is lagging 12 hours behind primary writes.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? search query latency has spiked to over 15 seconds per request.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: was any of our customer PII exposed in last week's third-party vendor incident.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because I lost my authenticator phone and don't have backup SMS codes.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? our Zapier webhook throws connection refused continuously.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because my refund has not arrived after 14 business days. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because our CISO needs an official security patch and exposure attestation report.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? how much does the enterprise tier cost for 500 developer seats.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: could you add multi-currency display support to the analytics view.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, your getting started guide omits two required environment variables.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, clicking the email activation link says invalid cryptographic signature.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? how do I switch our billing payment method from PayPal to ACH debit.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "EMERGENCY: complete platform downtime is hitting all our enterprise tenants. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the Slack alert integration stopped posting after yesterday's update.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the GitHub PR check runner crashes with exit status 137.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? my 6-digit TOTP authenticator code is always rejected as invalid.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because POST /auth/token returns 403 Forbidden even with freshly rotated keys. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: thousands of failed SSH/login attempts are hitting us from an unknown subnet.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the resend verification email button is greyed out on signup. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the password reset token expired immediately and the link won't load.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: how much does the enterprise tier cost for 500 developer seats.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? still waiting on my returned purchase credit from last month.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: still waiting on my returned purchase credit from last month.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "All hands needed immediately — requesting a formal disclosure on whether our tenant was hit by the recent CVE. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Please prioritize this request — I lost my authenticator phone and don't have backup SMS codes.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? permanently delete my user account and purge all stored PII.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, how do I switch our billing payment method from PayPal to ACH debit.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "All hands needed immediately — was any of our customer PII exposed in last week's third-party vendor incident. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Critical incident happening now: requesting a formal disclosure on whether our tenant was hit by the recent CVE. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: custom role permissions aren't propagating down to sub-teams.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? submitting a GDPR right-to-be-forgotten erasure request for my profile.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Please prioritize this request — cancel my pro membership before the next billing cycle starts.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? I was billed twice for the single-seat monthly plan.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Please prioritize this request — confidential files were downloaded by a former employee's disabled account.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? need to update my admin email address to our new corporate domain.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the PostgreSQL read replica is lagging 12 hours behind primary writes.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Critical incident happening now: we spotted an RBAC role bypass exposing private records on a public route. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: I want to replace my expired Mastercard with our new corporate Visa.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: our Salesforce connector has stopped syncing new contacts for 3 days.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? outgoing webhook events are silently dropped without retries.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the mobile app takes 45 seconds just to render the home feed.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because I forgot my master password and the recovery email never arrives. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because permanently delete my user account and purge all stored PII.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because your chatbot doesn't understand my issue, please connect me to a human. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: the Python SDK quickstart snippet still uses deprecated v1 syntax.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "EMERGENCY: requesting a formal disclosure on whether our tenant was hit by the recent CVE. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because we were overcharged by 20% on the latest enterprise bill.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the account confirmation email isn't showing up in inbox or spam.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because close our organization account and wipe all telemetry logs. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because requesting a formal disclosure on whether our tenant was hit by the recent CVE.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? search query latency has spiked to over 15 seconds per request.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: revoke write permissions for contractor accounts on our project.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Please prioritize this request — my credit card was declined during monthly checkout.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the password reset token expired immediately and the link won't load. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: the PDF download link for invoice INV-9042 is missing.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, need help updating our primary credit card on file.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Critical incident happening now: someone launched a credential phishing campaign mimicking your login portal. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because complete platform downtime is hitting all our enterprise tenants.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? my 6-digit TOTP authenticator code is always rejected as invalid.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the mobile app takes 45 seconds just to render the home feed. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because I want to terminate my paid subscription right away.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because your REST endpoint returns malformed JSON with missing closing brackets.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Please prioritize this request — still waiting on my returned purchase credit from last month.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? our YubiKey hardware token isn't recognized on the login screen.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? our consulting agency wants to join your certified reseller program.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the password reset token expired immediately and the link won't load.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the main production API is returning 502 Bad Gateway across all regions.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "EMERGENCY: your status page says green but the entire web dashboard is down. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because our Salesforce connector has stopped syncing new contacts for 3 days.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: locked out of my user login after 3 wrong attempts and need a reset.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the PostgreSQL read replica is lagging 12 hours behind primary writes.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because our Zapier webhook throws connection refused continuously.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Please prioritize this request — my refund has not arrived after 14 business days.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: stop my recurring annual renewal before it charges.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Critical incident happening now: your status page says green but the entire web dashboard is down. Please treat as P0!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because our YubiKey hardware token isn't recognized on the login screen.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because I was billed twice for the single-seat monthly plan. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: our staff received a fake invoice email impersonating your billing domain.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: it would be great to have native dark mode in the desktop client.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Please prioritize this request — our staff received a fake invoice email impersonating your billing domain.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? saving my new phone number fails the profile validation check.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Please prioritize this request — your status page says green but the entire web dashboard is down.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: what is the overage pricing structure once we exceed 1M API calls.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the PDF download link for invoice INV-9042 is missing.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because I need to speak directly with a live support engineer or supervisor.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: your status page says green but the entire web dashboard is down.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "EMERGENCY: we keep receiving HTTP 500 internal server errors when calling /v1/ingest. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Please prioritize this request — our CISO needs an official security patch and exposure attestation report.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the mobile app takes 45 seconds just to render the home feed.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: revoke write permissions for contractor accounts on our project.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? reaching out regarding co-marketing and joint technology integration.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? we keep receiving HTTP 500 internal server errors when calling /v1/ingest.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, saving my new phone number fails the profile validation check.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because your status page says green but the entire web dashboard is down.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Please prioritize this request — our YubiKey hardware token isn't recognized on the login screen.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: someone launched a credential phishing campaign mimicking your login portal.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Please prioritize this request — your chatbot doesn't understand my issue, please connect me to a human.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the mobile app takes 45 seconds just to render the home feed.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because custom role permissions aren't propagating down to sub-teams. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the refund money promised last Tuesday still hasn't hit my bank.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? do you offer non-profit or academic discounts on annual plans.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Please prioritize this request — stop my recurring annual renewal before it charges.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because toolbar buttons vanish when toggling dark mode on iOS Safari. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: submitting a GDPR right-to-be-forgotten erasure request for my profile.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "All hands needed immediately — confidential files were downloaded by a former employee's disabled account. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: permanently delete my user account and purge all stored PII.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: the resend verification email button is greyed out on signup.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: our consulting agency wants to join your certified reseller program.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Critical incident happening now: complete platform downtime is hitting all our enterprise tenants. Please treat as P0!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the PostgreSQL read replica is lagging 12 hours behind primary writes.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? your REST endpoint returns malformed JSON with missing closing brackets.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: clicking the email activation link says invalid cryptographic signature.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Critical incident happening now: someone changed my login email and linked an unknown device from overseas. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because outgoing webhook events are silently dropped without retries. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Critical incident happening now: thousands of failed SSH/login attempts are hitting us from an unknown subnet. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the refund money promised last Tuesday still hasn't hit my bank.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because we need the official tax invoice and receipt for fiscal year 2025. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? I was billed twice for the single-seat monthly plan.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? your chatbot doesn't understand my issue, please connect me to a human.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? my credit card was declined during monthly checkout.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? our Salesforce connector has stopped syncing new contacts for 3 days.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: do you offer non-profit or academic discounts on annual plans.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because my 6-digit TOTP authenticator code is always rejected as invalid. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? custom role permissions aren't propagating down to sub-teams.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because your REST endpoint returns malformed JSON with missing closing brackets. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because we keep receiving HTTP 500 internal server errors when calling /v1/ingest. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the GitHub PR check runner crashes with exit status 137.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because audit logs reveal API reads happening without any valid OAuth token.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: it would be great to have native dark mode in the desktop client.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the account confirmation email isn't showing up in inbox or spam.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: how do I switch our billing payment method from PayPal to ACH debit.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, promote user Sarah to organization billing administrator.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because how do I switch our billing payment method from PayPal to ACH debit. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? our Salesforce connector has stopped syncing new contacts for 3 days.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the GitHub PR check runner crashes with exit status 137.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Please prioritize this request — thousands of failed SSH/login attempts are hitting us from an unknown subnet.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Please prioritize this request — a spoofed lookalike domain is sending malicious links to our customers.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: close our organization account and wipe all telemetry logs.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because promote user Sarah to organization billing administrator. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the subscription payment keeps failing with error code 4002.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? please send a VAT-compliant invoice for our Q3 corporate filings.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: POST /auth/token returns 403 Forbidden even with freshly rotated keys.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "EMERGENCY: impossible travel alert showed logins from Tokyo and London 5 minutes apart. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because our YubiKey hardware token isn't recognized on the login screen. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because someone launched a credential phishing campaign mimicking your login portal.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: your getting started guide omits two required environment variables.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? interested in exploring a strategic distribution partnership in Europe.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Please prioritize this request — audit logs reveal API reads happening without any valid OAuth token.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, interested in exploring a strategic distribution partnership in Europe.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? locked out of my user login after 3 wrong attempts and need a reset.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because stop my recurring annual renewal before it charges.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because our Zapier webhook throws connection refused continuously. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Critical incident happening now: audit logs reveal API reads happening without any valid OAuth token. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "EMERGENCY: an attacker has an active session in our admin console right now. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? permanently delete my user account and purge all stored PII.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because impossible travel alert showed logins from Tokyo and London 5 minutes apart.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? reaching out regarding co-marketing and joint technology integration.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because our staff received a fake invoice email impersonating your billing domain.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? locked out of my user login after 3 wrong attempts and need a reset.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? do you offer non-profit or academic discounts on annual plans.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, could you add multi-currency display support to the analytics view.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? cancel my pro membership before the next billing cycle starts.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the Slack alert integration stopped posting after yesterday's update. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: confidential files were downloaded by a former employee's disabled account.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Please prioritize this request — we were overcharged by 20% on the latest enterprise bill.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: the resend verification email button is greyed out on signup.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because need help updating our primary credit card on file. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? please escalate this thread to a real person who can call me back.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because cancel my pro membership before the next billing cycle starts.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: please escalate this thread to a real person who can call me back.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Please prioritize this request — runaway browser memory usage is causing Chrome tabs to crash.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, what is the overage pricing structure once we exceed 1M API calls.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? I need to speak directly with a live support engineer or supervisor.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: the API reference doesn't document the X-RateLimit-Reset header format.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the Slack alert integration stopped posting after yesterday's update.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "EMERGENCY: thousands of failed SSH/login attempts are hitting us from an unknown subnet. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: need help updating our primary credit card on file.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "All hands needed immediately — someone launched a credential phishing campaign mimicking your login portal. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? I want to replace my expired Mastercard with our new corporate Visa.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? our consulting agency wants to join your certified reseller program.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? runaway browser memory usage is causing Chrome tabs to crash.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because please escalate this thread to a real person who can call me back.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Please prioritize this request — got a security alert that my password changed even though I didn't touch it.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: autopay failed and my account banner now says past due.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? need help updating our primary credit card on file.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Please prioritize this request — outgoing webhook events are silently dropped without retries.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Critical incident happening now: an attacker has an active session in our admin console right now. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Please prioritize this request — our Salesforce connector has stopped syncing new contacts for 3 days.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? please send a VAT-compliant invoice for our Q3 corporate filings.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the password reset token expired immediately and the link won't load.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the PDF download link for invoice INV-9042 is missing. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Please prioritize this request — submitting a GDPR right-to-be-forgotten erasure request for my profile.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: a login alert from a Tor exit node just fired on our root admin account.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the settings modal freezes whenever I enter non-ASCII characters. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? our YubiKey hardware token isn't recognized on the login screen.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because runaway browser memory usage is causing Chrome tabs to crash. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "All hands needed immediately — a spoofed lookalike domain is sending malicious links to our customers. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because I want to terminate my paid subscription right away. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Please prioritize this request — I need to speak directly with a live support engineer or supervisor.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: I want to terminate my paid subscription right away.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Please prioritize this request — was any of our customer PII exposed in last week's third-party vendor incident.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: the API reference doesn't document the X-RateLimit-Reset header format.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because an attacker has an active session in our admin console right now.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Critical incident happening now: a spoofed lookalike domain is sending malicious links to our customers. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because still waiting on my returned purchase credit from last month. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Critical incident happening now: we keep receiving HTTP 500 internal server errors when calling /v1/ingest. Please treat as P0!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: someone changed my login email and linked an unknown device from overseas.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "EMERGENCY: our staff received a fake invoice email impersonating your billing domain. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because please send a VAT-compliant invoice for our Q3 corporate filings. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the GitHub PR check runner crashes with exit status 137.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: our YubiKey hardware token isn't recognized on the login screen.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Please prioritize this request — our Zapier webhook throws connection refused continuously.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? revoke write permissions for contractor accounts on our project.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Critical incident happening now: impossible travel alert showed logins from Tokyo and London 5 minutes apart. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the mobile app takes 45 seconds just to render the home feed.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? need help updating our primary credit card on file.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? revoke write permissions for contractor accounts on our project.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because we spotted an RBAC role bypass exposing private records on a public route.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Please prioritize this request — someone changed my login email and linked an unknown device from overseas.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, the resend verification email button is greyed out on signup.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: audit logs reveal API reads happening without any valid OAuth token.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: we were overcharged by 20% on the latest enterprise bill.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: need to update my admin email address to our new corporate domain.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the password reset token expired immediately and the link won't load.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: please send a VAT-compliant invoice for our Q3 corporate filings.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, please send a VAT-compliant invoice for our Q3 corporate filings.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? I cannot change our registered business name in workspace settings.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "All hands needed immediately — impossible travel alert showed logins from Tokyo and London 5 minutes apart. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Please prioritize this request — locked out of my user login after 3 wrong attempts and need a reset.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the subscription payment keeps failing with error code 4002.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "All hands needed immediately — thousands of failed SSH/login attempts are hitting us from an unknown subnet. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: reaching out regarding co-marketing and joint technology integration.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? cancel my pro membership before the next billing cycle starts.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because search query latency has spiked to over 15 seconds per request. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Critical incident happening now: was any of our customer PII exposed in last week's third-party vendor incident. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "EMERGENCY: was any of our customer PII exposed in last week's third-party vendor incident. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? still waiting on my returned purchase credit from last month.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because locked out of my user login after 3 wrong attempts and need a reset. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: runaway browser memory usage is causing Chrome tabs to crash.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? promote user Sarah to organization billing administrator.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: my refund has not arrived after 14 business days.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because I cannot change our registered business name in workspace settings. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? need to update my admin email address to our new corporate domain.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because there is an unrecognized $49 extra fee on my bank statement. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Critical incident happening now: POST /auth/token returns 403 Forbidden even with freshly rotated keys. Please treat as P0!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: got a security alert that my password changed even though I didn't touch it.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? I need to speak directly with a live support engineer or supervisor.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because was any of our customer PII exposed in last week's third-party vendor incident.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, custom role permissions aren't propagating down to sub-teams.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Please prioritize this request — complete platform downtime is hitting all our enterprise tenants.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? custom role permissions aren't propagating down to sub-teams.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? we need the official tax invoice and receipt for fiscal year 2025.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because my 6-digit TOTP authenticator code is always rejected as invalid.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because I want to replace my expired Mastercard with our new corporate Visa. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because I lost my authenticator phone and don't have backup SMS codes. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because confidential files were downloaded by a former employee's disabled account.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because my refund has not arrived after 14 business days.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Critical incident happening now: a login alert from a Tor exit node just fired on our root admin account. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Please prioritize this request — there is an unrecognized $49 extra fee on my bank statement.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: our Zapier webhook throws connection refused continuously.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: please consider adding automated weekly PDF summary exports by email.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because interested in exploring a strategic distribution partnership in Europe. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: the Python SDK quickstart snippet still uses deprecated v1 syntax.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, the account confirmation email isn't showing up in inbox or spam.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: our CISO needs an official security patch and exposure attestation report.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: could you add multi-currency display support to the analytics view.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, we need the official tax invoice and receipt for fiscal year 2025.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? my refund has not arrived after 14 business days.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because saving my new phone number fails the profile validation check. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Please prioritize this request — toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? I cannot change our registered business name in workspace settings.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? I forgot my master password and the recovery email never arrives.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, reaching out regarding co-marketing and joint technology integration.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? POST /auth/token returns 403 Forbidden even with freshly rotated keys.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? POST /auth/token returns 403 Forbidden even with freshly rotated keys.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Please prioritize this request — I want to terminate my paid subscription right away.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? close our organization account and wipe all telemetry logs.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, the Python SDK quickstart snippet still uses deprecated v1 syntax.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "EMERGENCY: got a security alert that my password changed even though I didn't touch it. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: your getting started guide omits two required environment variables.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, do you offer non-profit or academic discounts on annual plans.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: there is an unrecognized $49 extra fee on my bank statement.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? we need the official tax invoice and receipt for fiscal year 2025.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: cancel my pro membership before the next billing cycle starts.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the subscription payment keeps failing with error code 4002. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: I lost my authenticator phone and don't have backup SMS codes.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Please prioritize this request — my 6-digit TOTP authenticator code is always rejected as invalid.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, the PDF download link for invoice INV-9042 is missing.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: what is the overage pricing structure once we exceed 1M API calls.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Please prioritize this request — impossible travel alert showed logins from Tokyo and London 5 minutes apart.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: outgoing webhook events are silently dropped without retries.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because submitting a GDPR right-to-be-forgotten erasure request for my profile. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the Slack alert integration stopped posting after yesterday's update.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? submitting a GDPR right-to-be-forgotten erasure request for my profile.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: I cannot change our registered business name in workspace settings.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because I need to speak directly with a live support engineer or supervisor. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: toolbar buttons vanish when toggling dark mode on iOS Safari.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because reaching out regarding co-marketing and joint technology integration. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, the API reference doesn't document the X-RateLimit-Reset header format.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because I was billed twice for the single-seat monthly plan.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: I forgot my master password and the recovery email never arrives.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: the account confirmation email isn't showing up in inbox or spam.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because our Salesforce connector has stopped syncing new contacts for 3 days. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? I lost my authenticator phone and don't have backup SMS codes.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: clicking the email activation link says invalid cryptographic signature.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Critical incident happening now: our staff received a fake invoice email impersonating your billing domain. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "EMERGENCY: a spoofed lookalike domain is sending malicious links to our customers. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "All hands needed immediately — audit logs reveal API reads happening without any valid OAuth token. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Please prioritize this request — permanently delete my user account and purge all stored PII.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? I want to terminate my paid subscription right away.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Critical incident happening now: the main production API is returning 502 Bad Gateway across all regions. Please treat as P0!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because outgoing webhook events are silently dropped without retries.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the mobile app takes 45 seconds just to render the home feed.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: our consulting agency wants to join your certified reseller program.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because cancel my pro membership before the next billing cycle starts. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because runaway browser memory usage is causing Chrome tabs to crash.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Critical incident happening now: got a security alert that my password changed even though I didn't touch it. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? your chatbot doesn't understand my issue, please connect me to a human.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: saving my new phone number fails the profile validation check.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because got a security alert that my password changed even though I didn't touch it.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? interested in exploring a strategic distribution partnership in Europe.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the main production API is returning 502 Bad Gateway across all regions.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because a login alert from a Tor exit node just fired on our root admin account.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Please prioritize this request — I forgot my master password and the recovery email never arrives.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? how much does the enterprise tier cost for 500 developer seats.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: interested in exploring a strategic distribution partnership in Europe.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, how much does the enterprise tier cost for 500 developer seats.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: I cannot change our registered business name in workspace settings.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? we were overcharged by 20% on the latest enterprise bill.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "All hands needed immediately — a login alert from a Tor exit node just fired on our root admin account. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: promote user Sarah to organization billing administrator.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: my credit card was declined during monthly checkout.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because clicking the email activation link says invalid cryptographic signature. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "All hands needed immediately — got a security alert that my password changed even though I didn't touch it. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: I need to speak directly with a live support engineer or supervisor.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "All hands needed immediately — the main production API is returning 502 Bad Gateway across all regions. Production impact is severe.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "All hands needed immediately — someone changed my login email and linked an unknown device from overseas. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: need help updating our primary credit card on file.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "All hands needed immediately — your REST endpoint returns malformed JSON with missing closing brackets. Production impact is severe.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "EMERGENCY: POST /auth/token returns 403 Forbidden even with freshly rotated keys. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? there is an unrecognized $49 extra fee on my bank statement.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? your REST endpoint returns malformed JSON with missing closing brackets.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the account confirmation email isn't showing up in inbox or spam. Thanks!",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the GitHub PR check runner crashes with exit status 137. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? what is the overage pricing structure once we exceed 1M API calls.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because do you offer non-profit or academic discounts on annual plans. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? autopay failed and my account banner now says past due.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Please prioritize this request — please escalate this thread to a real person who can call me back.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: please consider adding automated weekly PDF summary exports by email.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "All hands needed immediately — complete platform downtime is hitting all our enterprise tenants. Production impact is severe.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Please prioritize this request — someone launched a credential phishing campaign mimicking your login portal.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the resend verification email button is greyed out on signup.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? stop my recurring annual renewal before it charges.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? I want to terminate my paid subscription right away.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "EMERGENCY: confidential files were downloaded by a former employee's disabled account. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? how do I switch our billing payment method from PayPal to ACH debit.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because submitting a GDPR right-to-be-forgotten erasure request for my profile.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Please prioritize this request — your REST endpoint returns malformed JSON with missing closing brackets.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, revoke write permissions for contractor accounts on our project.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: custom role permissions aren't propagating down to sub-teams.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because thousands of failed SSH/login attempts are hitting us from an unknown subnet.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: complete platform downtime is hitting all our enterprise tenants.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? saving my new phone number fails the profile validation check.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because my credit card was declined during monthly checkout. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because POST /auth/token returns 403 Forbidden even with freshly rotated keys.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: please send a VAT-compliant invoice for our Q3 corporate filings.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, I cannot change our registered business name in workspace settings.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because I forgot my master password and the recovery email never arrives.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "All hands needed immediately — we spotted an RBAC role bypass exposing private records on a public route. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because stop my recurring annual renewal before it charges. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Critical incident happening now: our CISO needs an official security patch and exposure attestation report. Please treat as P0!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "EMERGENCY: the main production API is returning 502 Bad Gateway across all regions. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: promote user Sarah to organization billing administrator.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Please prioritize this request — we keep receiving HTTP 500 internal server errors when calling /v1/ingest.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, it would be great to have native dark mode in the desktop client.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: your REST endpoint returns malformed JSON with missing closing brackets.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because autopay failed and my account banner now says past due.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Please prioritize this request — POST /auth/token returns 403 Forbidden even with freshly rotated keys.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because please escalate this thread to a real person who can call me back. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: reaching out regarding co-marketing and joint technology integration.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "All hands needed immediately — we keep receiving HTTP 500 internal server errors when calling /v1/ingest. Production impact is severe.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "EMERGENCY: someone launched a credential phishing campaign mimicking your login portal. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Please prioritize this request — clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because there is an unrecognized $49 extra fee on my bank statement.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: your chatbot doesn't understand my issue, please connect me to a human.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: we keep receiving HTTP 500 internal server errors when calling /v1/ingest.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Whenever you have a spare moment, our consulting agency wants to join your certified reseller program.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: an attacker has an active session in our admin console right now.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? there is an unrecognized $49 extra fee on my bank statement.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "All hands needed immediately — our CISO needs an official security patch and exposure attestation report. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because a spoofed lookalike domain is sending malicious links to our customers.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? my refund has not arrived after 14 business days.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because how much does the enterprise tier cost for 500 developer seats. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "EMERGENCY: a login alert from a Tor exit node just fired on our root admin account. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "All hands needed immediately — your status page says green but the entire web dashboard is down. Production impact is severe.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because close our organization account and wipe all telemetry logs.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the GitHub PR check runner crashes with exit status 137.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because clicking export to CSV throws an unhandled Javascript null pointer error. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the PostgreSQL read replica is lagging 12 hours behind primary writes. Thanks!",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because our consulting agency wants to join your certified reseller program. Thanks!",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Please prioritize this request — an attacker has an active session in our admin console right now.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? clicking the email activation link says invalid cryptographic signature.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "EMERGENCY: audit logs reveal API reads happening without any valid OAuth token. Our entire team is completely blocked right now!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: how do I switch our billing payment method from PayPal to ACH debit.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: saving my new phone number fails the profile validation check.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because the refund money promised last Tuesday still hasn't hit my bank.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? promote user Sarah to organization billing administrator.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: my 6-digit TOTP authenticator code is always rejected as invalid.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Can someone look into this when available? the subscription payment keeps failing with error code 4002.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? the refund money promised last Tuesday still hasn't hit my bank.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because the refund money promised last Tuesday still hasn't hit my bank. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the Slack alert integration stopped posting after yesterday's update.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Please prioritize this request — close our organization account and wipe all telemetry logs.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the subscription payment keeps failing with error code 4002.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: need to update my admin email address to our new corporate domain.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Hello team, could you help us out? what is the overage pricing structure once we exceed 1M API calls.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: interested in exploring a strategic distribution partnership in Europe.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "We really need this resolved quickly because someone changed my login email and linked an unknown device from overseas.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Hi, I am reaching out because autopay failed and my account banner now says past due. Thanks!",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Please prioritize this request — we spotted an RBAC role bypass exposing private records on a public route.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: the PDF download link for invoice INV-9042 is missing.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Quick low-priority question for your team: the settings modal freezes whenever I enter non-ASCII characters.",
+    "expected": {
+      "category": "technical",
+      "priority": "low",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "Please prioritize this request — the main production API is returning 502 Bad Gateway across all regions.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "All hands needed immediately — our staff received a fake invoice email impersonating your billing domain. Production impact is severe.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Hi support, this needs urgent attention today: the refund money promised last Tuesday still hasn't hit my bank.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: we need the official tax invoice and receipt for fiscal year 2025.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "No rush at all, just wanted to mention: the account confirmation email isn't showing up in inbox or spam.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  }
+]

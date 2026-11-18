@@ -1,0 +1,93 @@
+[
+  {
+    "id": "q01",
+    "question": "What are the four high-level functions that compose the AI RMF Core?",
+    "expected_answer": "The AI RMF Core is composed of four functions: GOVERN, MAP, MEASURE, and MANAGE.",
+    "generated_answer": "The four high-level functions that compose the AI RMF Core are:\n\n1. **GOVERN** - This function is designed to be a cross-cutting function to inform and be infused throughout the other three functions.\n2. **MAP** - This function includes governance as a cross-cutting function to inform and be infused throughout the other three functions.\n3. **MEASURE** - This function involves risk management, which should be continuous, timely, and performed throughout the AI system lifecycle dimensions.\n4. **MANAGE** - This function encompasses risk treatments, response and recovery, and communication plans for identified and measured AI risks.\n\nThese four functions collectively provide the framework for managing AI risks and responsible development",
+    "retrieved_pages": [
+      25,
+      38,
+      8
+    ],
+    "top_score": 0.7188,
+    "generation_time_sec": 2.05
+  },
+  {
+    "id": "q02",
+    "question": "Why is the GOVERN function considered a cross-cutting function in the NIST AI RMF?",
+    "expected_answer": "GOVERN is a cross-cutting function infused throughout AI risk management that enables the other functions; aspects like compliance and evaluation should be integrated into each of the other functions over an AI system's lifespan.",
+    "generated_answer": "The GOVERN function in the NIST AI RMF is considered a cross-cutting function because it serves as a foundational component that encompasses the entire scope of organizational AI risk management activities. This function is designed to provide guidance and oversight across various levels of the organization's AI risk management process, ensuring that all aspects of AI risk management are addressed systematically and holistically.\n\nKey reasons why GOVERN is seen as a cross-cutting function include:\n\n1. **Unified Approach**: It aligns with the overall framework of the AI RMF, providing a unified perspective on AI risk management across different departments and stakeholders within an organization.\n   \n2. **Cross-Sectorial Consideration**: By covering risks across multiple",
+    "retrieved_pages": [
+      25,
+      39,
+      8
+    ],
+    "top_score": 0.5501,
+    "generation_time_sec": 1.76
+  },
+  {
+    "id": "q06",
+    "question": "How does NIST distinguish between transparency, explainability, and interpretability?",
+    "expected_answer": "Transparency answers 'what happened' in the system, explainability answers 'how' a decision was made, and interpretability addresses why an AI system made a prediction in context.",
+    "generated_answer": "NIST distinguishes three key aspects of AI systems' capabilities:\n\n1. **Transparency**: This involves explaining the reasoning behind predictions or recommendations. It aims to provide clear, understandable explanations about how the system arrived at its conclusions.\n\n2. **Explainability**: This focuses on understanding the meaning and context of the AI's output. It seeks to give users a better understanding of what the system is doing and how it makes decisions.\n\n3. **Interpretability**: This aspect deals with interpreting the outcomes of the AI system. It aims to allow users to understand the implications of the AI's actions and decisions.\n\nThe distinction is crucial because it helps determine whether the AI system meets certain standards of fairness",
+    "retrieved_pages": [
+      22,
+      21,
+      21
+    ],
+    "top_score": 0.6417,
+    "generation_time_sec": 1.42
+  },
+  {
+    "id": "q07",
+    "question": "What are the three major categories of AI bias identified by NIST?",
+    "expected_answer": "The three major categories of AI bias are systemic, computational and statistical, and human-cognitive.",
+    "generated_answer": "The three major categories of AI bias identified by NIST are:\n\n1. **Systemic** - This category includes bias that occurs in AI datasets, the organizational norms, practices, and processes across the AI lifecycle, and the broader society that uses AI systems.\n   \n2. **Computational** - This category refers to bias that can be present in AI datasets and algorithmic processes, and often stems from systematic errors due to non-representative samples.\n\n3. **Statistical** - This category encompasses bias that relates to how an individual or group perceives AI system information to make a decision or fill in missing information, or how humans think about purposes and functions of an AI system.",
+    "retrieved_pages": [
+      23,
+      23,
+      34
+    ],
+    "top_score": 0.7748,
+    "generation_time_sec": 1.42
+  },
+  {
+    "id": "q08",
+    "question": "How does the NIST AI RMF define 'risk tolerance' and what standard is it adapted from?",
+    "expected_answer": "Risk tolerance refers to an organization's or AI actor's readiness to bear risk in order to achieve its objectives, adapted from ISO GUIDE 73.",
+    "generated_answer": "The NIST AI RMF defines 'risk tolerance' as \"the organization's or AI actor's (see Appendix A) readiness to bear the risk in order to achieve its objectives.\" It also mentions that risk tolerance can be influenced by legal or regulatory requirements.\n\nThe standard that the NIST AI RMF adapts from is ISO Guide 73.",
+    "retrieved_pages": [
+      12,
+      2,
+      1
+    ],
+    "top_score": 0.7324,
+    "generation_time_sec": 0.76
+  },
+  {
+    "id": "q11",
+    "question": "What is required under subcategory MEASURE 2.6 regarding safety risk evaluations?",
+    "expected_answer": "The AI system must be evaluated regularly for safety risks identified in MAP, demonstrated to be safe with residual negative risk not exceeding risk tolerance, and able to fail safely beyond its knowledge limits.",
+    "generated_answer": "Under subcategory MEASURE 2.6 of the NIST AI RMF 1.0 practices related to measuring AI risks, it states:\n\n\"Measures include safety risk evaluations.\"\n\nThis means that safety risk evaluations are an important aspect of the MEASURE 2.6 category.",
+    "retrieved_pages": [
+      4,
+      34,
+      26
+    ],
+    "top_score": 0.5891,
+    "generation_time_sec": 0.64
+  },
+  {
+    "id": "q12",
+    "question": "What mechanisms must be included in post-deployment AI system monitoring plans under MANAGE 4.1?",
+    "expected_answer": "Mechanisms for capturing and evaluating input from users and AI actors, appeal and override, decommissioning, incident response, recovery, and change management.",
+    "generated_answer": "Under MANAGE 4.1, mechanisms must be included in post-deployment AI system monitoring plans to capture and evaluate input from users and other relevant AI actors, such as:\n\n1. **Appeal and Override**: This involves documenting and implementing procedures to handle appeals and overrides related to AI system performance or outcomes.\n   \n2. **Decommissioning**: This includes mechanisms to document and monitor the process of decommissioning AI systems after they have been identified as potentially problematic.\n\n3. **Incident Response**: This entails documenting and following up on incidents and errors that occur during the operation and monitoring phases of the lifecycle.\n\n4. **Recovery**: This includes documentation and follow-up actions to address",
+    "retrieved_pages": [
+      37,
+      38,
+      40
+    ],
+    "top_score": 0.6055,
+    "generation_time_sec": 1.42
+  }
+]

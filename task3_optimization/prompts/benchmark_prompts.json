@@ -1,0 +1,52 @@
+[
+  {
+    "id": "p01_factual",
+    "category": "Factual explanation",
+    "prompt": "Explain the difference between symmetric and asymmetric encryption in two concise paragraphs. Include standard algorithms for each."
+  },
+  {
+    "id": "p02_reasoning",
+    "category": "Reasoning",
+    "prompt": "A farmer needs to cross a river with a wolf, a goat, and a cabbage. His boat can only carry himself and one item at a time. If left alone together, the wolf will eat the goat, or the goat will eat the cabbage. How can the farmer transport all three safely across the river? Detail the step-by-step solution."
+  },
+  {
+    "id": "p03_json",
+    "category": "JSON generation",
+    "prompt": "Extract the entities from this text and return strictly valid JSON with keys 'company', 'revenue_billion_usd', 'growth_percent', and 'headquarters': 'In fiscal 2024, Acme Robotics, based in Boston, reported record revenues of $4.8 billion, representing a 28% year-over-year increase.'"
+  },
+  {
+    "id": "p04_instruction_following",
+    "category": "Instruction following",
+    "prompt": "Write a 4-line poem about autumn. Every line must begin with the letter 'W'. Do not include any title or explanatory text."
+  },
+  {
+    "id": "p05_summarization",
+    "category": "Summarization",
+    "prompt": "Summarize the following paragraph in exactly two bullet points, capturing the primary mechanism and the main limitation:\n'Low-Rank Adaptation (LoRA) freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly diminishing the number of trainable parameters for downstream tasks. While this approach dramatically reduces GPU VRAM consumption and training latency, it can occasionally exhibit reduced expressive capacity on complex tasks compared to full fine-tuning if the intrinsic rank of the adaptation task is high.'"
+  },
+  {
+    "id": "p06_coding",
+    "category": "Simple coding",
+    "prompt": "Write a clean, self-contained Python function `find_longest_palindromic_substring(s: str) -> str` with docstring, type hints, and optimal time complexity. Include an example usage."
+  },
+  {
+    "id": "p07_classification",
+    "category": "Classification",
+    "prompt": "Classify the sentiment and customer intent of this message. Format your response strictly as JSON with keys 'sentiment' (positive/neutral/negative) and 'intent' (churn_risk/feature_request/billing/bug):\n'I have been a loyal customer for 3 years, but your recent 40% price hike without any new features is forcing our company to evaluate alternatives.'"
+  },
+  {
+    "id": "p08_multistep",
+    "category": "Multi-step instructions",
+    "prompt": "Execute the following multi-step instructions:\nStep 1: List three key advantages of retrieval-augmented generation (RAG).\nStep 2: For each advantage, identify one potential operational failure mode.\nStep 3: Provide a single sentence summarizing the overall trade-off."
+  },
+  {
+    "id": "p09_math_logic",
+    "category": "Reasoning / Math",
+    "prompt": "If a train travels at 75 km/h for 2 hours and 24 minutes, and then increases its speed to 90 km/h for the next 1 hour and 36 minutes, what is the total distance traveled and the average speed for the entire trip? Show your arithmetic calculations."
+  },
+  {
+    "id": "p10_system_role",
+    "category": "Instruction following / Persona",
+    "prompt": "You are a senior database reliability engineer. A junior developer wants to add an index to every single column in a high-throughput write-heavy PostgreSQL table. Provide a 3-point constructive critique explaining why this is counterproductive and what should be done instead."
+  }
+]

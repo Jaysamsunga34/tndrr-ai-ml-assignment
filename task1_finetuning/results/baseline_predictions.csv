@@ -1,0 +1,341 @@
+input,expected_category,expected_priority,expected_intent,raw_output,is_valid_json,pred_category,pred_priority,pred_intent,category_correct,priority_correct,intent_correct,exact_match
+Following up with a routine support question: Stripe checkout rejects our corporate debit card every time we retry.,billing,medium,payment_failed,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve technical issue""
+}",True,technical,high,resolve technical issue,False,False,False,False
+"Per GDPR Article 17 legal mandate, we must permanently delete and purge all personal data for user ID #88391 within 24 hours.",account,high,account_deletion,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""delete personal data""
+}",True,technical,high,delete personal data,False,True,False,False
+This is blocking our daily operations and needs prompt attention: the Shopify store plugin disconnects automatically every 30 minutes.,technical,high,integration_crash,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,True,True,False,False
+Following up with a routine support question: scheduled analytics reports are timing out after 60 seconds consistently.,technical,medium,performance_issue,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""schedule analytics reports""
+}",True,technical,high,schedule analytics reports,True,False,False,False
+Following up with a routine support question: stop sending automated replies and transfer me to a senior human rep.,general,medium,human_agent_request,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""transfer""
+}",True,technical,high,transfer,False,False,False,False
+Following up with a routine support question: the Shopify store plugin disconnects automatically every 30 minutes.,technical,medium,integration_crash,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""ask about Shopify store plugin functionality""
+}",True,technical,high,ask about shopify store plugin functionality,True,False,False,False
+"Hey team, not urgent at all—just thought it would be cool if you added a button to export monthly invoices as CSV instead of only PDF.",general,low,feature_request,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""inform""
+}",True,technical,low,inform,False,True,False,False
+An unknown user from a foreign IP is actively exporting our entire customer table from the admin panel as I type this!,security,critical,account_takeover_suspected,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""malware""
+}",True,technical,high,malware,False,False,False,False
+Red alert! Everything just broke — none of our workers can connect to your hosted services globally. We are losing customers every minute.,technical,critical,service_outage,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,True,False,False,False
+Following up with a routine support question: who is the right business development contact for vendor partnerships.,general,medium,partnership_query,"{
+  ""category"": ""technical"",
+  ""priority"": ""medium"",
+  ""intent"": ""ask about business development contacts""
+}",True,technical,medium,ask about business development contacts,False,True,False,False
+"Hey folks, hoping you can assist with something on our account: completing email verification keeps looping back to the unverified banner.",account,medium,email_verification,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""email verification""
+}",True,technical,high,email verification,False,False,False,False
+We've been stuck on this since morning and need a fast resolution: none of our workers can connect to your hosted services globally.,technical,high,service_outage,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""connectivity""
+}",True,technical,high,connectivity,True,True,False,False
+My phone fell in a lake so my Google Authenticator is gone and I have an investor demo in 20 minutes—help me bypass 2FA!,account,high,2fa_trouble,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""phone lost, need to bypass 2FA""
+}",True,technical,high,"phone lost, need to bypass 2fa",False,True,False,False
+"URGENT PLEASE READ: Actually I'm not in a hurry at all, whenever you have time next week could you share enterprise pricing for 50 seats?",general,low,pricing_inquiry,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,False,False,False
+Following up with a routine support question: please end my auto-renewing seat plan and downgrade to free.,billing,medium,subscription_cancel,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""request""
+}",True,technical,high,request,False,False,False,False
+Following up with a routine support question: a money-back payout approved two weeks ago never appeared on my statement.,billing,medium,refund_delay,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""request""
+}",True,technical,high,request,False,False,False,False
+We've been stuck on this since morning and need a fast resolution: we are seeing a coordinated brute-force login spike against our portal.,security,high,suspicious_ip_login,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve login spike""
+}",True,technical,high,resolve login spike,False,True,False,False
+This is blocking our daily operations and needs prompt attention: Stripe checkout rejects our corporate debit card every time we retry.,billing,high,payment_failed,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""block""
+}",True,technical,high,block,False,True,False,False
+"Hey folks, hoping you can assist with something on our account: could you email an itemized billing receipt for our accounting audit.",billing,medium,invoice_request,"{
+  ""category"": ""account"",
+  ""priority"": ""low"",
+  ""intent"": ""ask""
+}",True,account,low,ask,False,False,False,False
+Our entire production database cluster went unreachable right after your v4.3 rollout! Every customer transaction is failing right now!,technical,critical,service_outage,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""immediate repair""
+}",True,technical,high,immediate repair,True,False,False,False
+Totally fine if this takes a few days — suggestion: let users bulk-tag multiple support threads at once.,general,low,feature_request,"{
+  ""category"": ""technical"",
+  ""priority"": ""medium"",
+  ""intent"": ""suggestion""
+}",True,technical,medium,suggestion,False,False,False,False
+Just a casual note with zero urgency: could you email an itemized billing receipt for our accounting audit.,billing,low,invoice_request,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""inform""
+}",True,technical,low,inform,False,True,False,False
+Red alert! Everything just broke — we detected a fraudulent site harvesting logins using your brand logo. We are losing customers every minute.,security,critical,phishing_report,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""customer service""
+}",True,technical,high,customer service,False,False,False,False
+Following up with a routine support question: please terminate my profile and erase personal data under CCPA rules.,account,medium,account_deletion,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""terminate profile and delete personal data""
+}",True,technical,high,terminate profile and delete personal data,False,False,False,False
+Zero rush! Just spotted a small typo in the webhook authentication code example on page 3 of your developer docs.,general,low,documentation_feedback,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""explain""
+}",True,technical,low,explain,False,True,False,False
+This is blocking our daily operations and needs prompt attention: stop sending automated replies and transfer me to a senior human rep.,general,high,human_agent_request,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,True,False,False
+Just a casual note with zero urgency: we need a read-only auditor role assigned to our compliance lead.,account,low,role_permission_change,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""assign read-only auditor role""
+}",True,technical,low,assign read-only auditor role,False,True,False,False
+This is blocking our daily operations and needs prompt attention: scheduled analytics reports are timing out after 60 seconds consistently.,technical,high,performance_issue,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,True,True,False,False
+Following up with a routine support question: my card was charged full price even though I cancelled during the free trial.,billing,medium,overcharge_dispute,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve billing issue""
+}",True,technical,high,resolve billing issue,False,False,False,False
+This is blocking our daily operations and needs prompt attention: please end my auto-renewing seat plan and downgrade to free.,billing,high,subscription_cancel,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,True,False,False
+Following up with a routine support question: bidirectional sync conflicts are overwriting our local CRM records.,technical,medium,data_sync_failure,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve bidirectional sync conflicts""
+}",True,technical,high,resolve bidirectional sync conflicts,True,False,False,False
+"Hey folks, hoping you can assist with something on our account: we want to add a backup payment card so renewals don't bounce.",billing,medium,update_payment_method,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""help""
+}",True,technical,high,help,False,False,False,False
+This is blocking our daily operations and needs prompt attention: please terminate my profile and erase personal data under CCPA rules.,account,high,account_deletion,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""block daily operations, need urgent attention""
+}",True,technical,high,"block daily operations, need urgent attention",False,True,False,False
+"Hey folks, hoping you can assist with something on our account: we need a read-only auditor role assigned to our compliance lead.",account,medium,role_permission_change,"{
+  ""category"": ""technical"",
+  ""priority"": ""medium"",
+  ""intent"": ""assess and assign a read-only auditor role""
+}",True,technical,medium,assess and assign a read-only auditor role,False,True,False,False
+"Critical security alert!! Wait nevermind, false alarm—my coworker John just forgot his login password again. Can we trigger a password reset for him?",account,medium,password_reset,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""trigger password reset""
+}",True,technical,high,trigger password reset,False,False,False,False
+Totally fine if this takes a few days — several hyperlinks in the webhook architecture docs return 404.,general,low,documentation_feedback,"{
+  ""category"": ""technical"",
+  ""priority"": ""medium"",
+  ""intent"": ""request for clarification on webhooks and their handling time""
+}",True,technical,medium,request for clarification on webhooks and their handling time,False,False,False,False
+"Hey folks, hoping you can assist with something on our account: uploading a new company avatar errors out with unsupported file format.",account,medium,profile_update,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""help""
+}",True,technical,high,help,False,False,False,False
+Just a casual note with zero urgency: uploading a new company avatar errors out with unsupported file format.,account,low,profile_update,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""inform""
+}",True,technical,low,inform,False,True,False,False
+This is blocking our daily operations and needs prompt attention: bidirectional sync conflicts are overwriting our local CRM records.,technical,high,data_sync_failure,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,True,True,False,False
+Could you downgrade Sarah's role from admin to read-only before she switches teams next Friday? No hurry.,account,low,role_permission_change,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""downgrade Sarah's role""
+}",True,technical,low,downgrade sarah's role,False,True,False,False
+We've been stuck on this since morning and need a fast resolution: an unauthorized intruder is currently modifying settings inside our tenant.,security,high,account_takeover_suspected,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve unauthorized intruder modification issue""
+}",True,technical,high,resolve unauthorized intruder modification issue,False,True,False,False
+Following up with a routine support question: can't get past two-factor verification after migrating to a new device.,account,medium,2fa_trouble,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""request assistance with a specific technical issue""
+}",True,technical,high,request assistance with a specific technical issue,False,False,False,False
+Following up with a routine support question: the dashboard table pagination skips every second page when sorting.,technical,medium,bug_report,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""improvement""
+}",True,technical,high,improvement,True,False,False,False
+I'm locked out because clicking the password reset endpoint returns a 502 Bad Gateway server crash every time.,technical,high,api_error,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""password reset endpoint issue""
+}",True,technical,high,password reset endpoint issue,True,True,False,False
+Following up with a routine support question: could you share a custom quote for dedicated single-tenant hosting.,general,medium,pricing_inquiry,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""ask for a custom quote""
+}",True,technical,high,ask for a custom quote,False,False,False,False
+This is blocking our daily operations and needs prompt attention: a money-back payout approved two weeks ago never appeared on my statement.,billing,high,refund_delay,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,True,False,False
+I was double-charged $299 on my credit card statement because your checkout API threw a 500 error while processing my renewal.,billing,high,overcharge_dispute,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""recurring charge""
+}",True,technical,high,recurring charge,False,True,False,False
+I've been arguing with your AI bot for 45 minutes and getting nowhere. Escalate me to a real human supervisor immediately!,general,high,human_agent_request,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""escalate""
+}",True,technical,high,escalate,False,True,False,False
+We've been stuck on this since morning and need a fast resolution: the API rate limiter triggers after 2 requests instead of our 100/sec quota.,technical,high,api_error,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve API rate limit issue""
+}",True,technical,high,resolve api rate limit issue,True,True,False,False
+Red alert! Everything just broke — an unauthorized intruder is currently modifying settings inside our tenant. We are losing customers every minute.,security,critical,account_takeover_suspected,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,False,False,False
+"Please don't panic, just checking casually whether our workspace was impacted at all by last month's supply chain CVE.",security,high,data_breach_inquiry,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""check for impact""
+}",True,technical,low,check for impact,False,False,False,False
+Just a casual note with zero urgency: we want to add a backup payment card so renewals don't bounce.,billing,low,update_payment_method,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""inform""
+}",True,technical,low,inform,False,True,False,False
+Totally fine if this takes a few days — could you share a custom quote for dedicated single-tenant hosting.,general,low,pricing_inquiry,"{
+  ""category"": ""technical"",
+  ""priority"": ""medium"",
+  ""intent"": ""ask for a custom quote""
+}",True,technical,medium,ask for a custom quote,False,False,False,False
+Code red on our production environment: please confirm if our workspace data was affected by the disclosed breach. Need immediate engineering intervention.,security,critical,data_breach_inquiry,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""immediate engineering intervention""
+}",True,technical,high,immediate engineering intervention,False,False,False,False
+This is blocking our daily operations and needs prompt attention: unable to reset my forgotten account password through the login form.,account,high,password_reset,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""password reset""
+}",True,technical,high,password reset,False,True,False,False
+This is blocking our daily operations and needs prompt attention: please confirm if our workspace data was affected by the disclosed breach.,security,high,data_breach_inquiry,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""request confirmation""
+}",True,technical,high,request confirmation,False,True,False,False
+This is blocking our daily operations and needs prompt attention: can't get past two-factor verification after migrating to a new device.,account,high,2fa_trouble,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""block""
+}",True,technical,high,block,False,True,False,False
+This is blocking our daily operations and needs prompt attention: the dashboard table pagination skips every second page when sorting.,technical,high,bug_report,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,True,True,False,False
+This is blocking our daily operations and needs prompt attention: my card was charged full price even though I cancelled during the free trial.,billing,high,overcharge_dispute,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,True,False,False
+Just a casual note with zero urgency: completing email verification keeps looping back to the unverified banner.,account,low,email_verification,"{
+  ""category"": ""technical"",
+  ""priority"": ""low"",
+  ""intent"": ""inform""
+}",True,technical,low,inform,False,True,False,False
+Red alert! Everything just broke — the API rate limiter triggers after 2 requests instead of our 100/sec quota. We are losing customers every minute.,technical,critical,api_error,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,True,False,False,False
+Red alert! Everything just broke — we are seeing a coordinated brute-force login spike against our portal. We are losing customers every minute.,security,critical,suspicious_ip_login,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,False,False,False
+Following up with a routine support question: unable to reset my forgotten account password through the login form.,account,medium,password_reset,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""reset account password""
+}",True,technical,high,reset account password,False,False,False,False
+We've been stuck on this since morning and need a fast resolution: we detected a fraudulent site harvesting logins using your brand logo.,security,high,phishing_report,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve fraud detection issue""
+}",True,technical,high,resolve fraud detection issue,False,True,False,False
+Totally fine if this takes a few days — who is the right business development contact for vendor partnerships.,general,low,partnership_query,"{
+  ""category"": ""technical"",
+  ""priority"": ""medium"",
+  ""intent"": ""ask""
+}",True,technical,medium,ask,False,False,False,False
+We've been stuck on this since morning and need a fast resolution: internal project documents became accessible to external guests without sharing.,security,high,unauthorized_access,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""resolve technical issue""
+}",True,technical,high,resolve technical issue,False,True,False,False
+My CFO is furious—we canceled our annual subscription in October yet you billed our corporate Visa again this morning!,billing,high,overcharge_dispute,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""customer_support""
+}",True,technical,high,customer_support,False,True,False,False
+Red alert! Everything just broke — internal project documents became accessible to external guests without sharing. We are losing customers every minute.,security,critical,unauthorized_access,"{
+  ""category"": ""technical"",
+  ""priority"": ""high"",
+  ""intent"": ""urgent""
+}",True,technical,high,urgent,False,False,False,False

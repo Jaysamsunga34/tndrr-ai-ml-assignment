@@ -1,0 +1,226 @@
+[
+  {
+    "input": "Minor non-urgent request for whenever convenient: our consulting agency wants to join your certified reseller program.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Urgent P0 escalation: the main production API is returning 502 Bad Gateway across all regions. Immediate response required.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Standard inquiry from our workspace: the account confirmation email isn't showing up in inbox or spam.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: I was billed twice for the single-seat monthly plan.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: my credit card was declined during monthly checkout.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: requesting a formal disclosure on whether our tenant was hit by the recent CVE.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Urgent P0 escalation: we keep receiving HTTP 500 internal server errors when calling /v1/ingest. Immediate response required.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Standard inquiry from our workspace: I want to replace my expired Mastercard with our new corporate Visa.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Urgent P0 escalation: someone changed my login email and linked an unknown device from overseas. Immediate response required.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Urgent P0 escalation: a login alert from a Tor exit node just fired on our root admin account. Immediate response required.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: permanently delete my user account and purge all stored PII.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Standard inquiry from our workspace: I cannot change our registered business name in workspace settings.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Urgent P0 escalation: our staff received a fake invoice email impersonating your billing domain. Immediate response required.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Minor non-urgent request for whenever convenient: it would be great to have native dark mode in the desktop client.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: my refund has not arrived after 14 business days.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: search query latency has spiked to over 15 seconds per request.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: clicking export to CSV throws an unhandled Javascript null pointer error.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: I forgot my master password and the recovery email never arrives.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: your chatbot doesn't understand my issue, please connect me to a human.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Standard inquiry from our workspace: promote user Sarah to organization billing administrator.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Minor non-urgent request for whenever convenient: the Python SDK quickstart snippet still uses deprecated v1 syntax.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "Minor non-urgent request for whenever convenient: how much does the enterprise tier cost for 500 developer seats.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: our Salesforce connector has stopped syncing new contacts for 3 days.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: the Slack alert integration stopped posting after yesterday's update.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: I lost my authenticator phone and don't have backup SMS codes.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Urgent P0 escalation: confidential files were downloaded by a former employee's disabled account. Immediate response required.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "Standard inquiry from our workspace: we need the official tax invoice and receipt for fiscal year 2025.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "High-impact problem for our team today: stop my recurring annual renewal before it charges.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  }
+]

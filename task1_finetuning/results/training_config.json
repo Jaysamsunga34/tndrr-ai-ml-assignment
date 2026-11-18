@@ -1,0 +1,26 @@
+{
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "seed": 42,
+  "device": "mps",
+  "dtype": "torch.float32",
+  "learning_rate": 0.0002,
+  "epochs": 3,
+  "per_device_batch_size": 8,
+  "gradient_accumulation_steps": 2,
+  "effective_batch_size": 16,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "trainable_params": 1081344,
+  "total_params": 495114112,
+  "trainable_percent": 0.2184,
+  "max_seq_length": 256,
+  "loss_masking": "assistant_response_only",
+  "training_duration_seconds": 231.97
+}

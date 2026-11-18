@@ -1,0 +1,546 @@
+[
+  {
+    "input": "Following up with a routine support question: Stripe checkout rejects our corporate debit card every time we retry.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Per GDPR Article 17 legal mandate, we must permanently delete and purge all personal data for user ID #88391 within 24 hours.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: the Shopify store plugin disconnects automatically every 30 minutes.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: scheduled analytics reports are timing out after 60 seconds consistently.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: stop sending automated replies and transfer me to a senior human rep.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: the Shopify store plugin disconnects automatically every 30 minutes.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "integration_crash"
+    }
+  },
+  {
+    "input": "Hey team, not urgent at all—just thought it would be cool if you added a button to export monthly invoices as CSV instead of only PDF.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "An unknown user from a foreign IP is actively exporting our entire customer table from the admin panel as I type this!",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Red alert! Everything just broke — none of our workers can connect to your hosted services globally. We are losing customers every minute.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: who is the right business development contact for vendor partnerships.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "Hey folks, hoping you can assist with something on our account: completing email verification keeps looping back to the unverified banner.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "We've been stuck on this since morning and need a fast resolution: none of our workers can connect to your hosted services globally.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "My phone fell in a lake so my Google Authenticator is gone and I have an investor demo in 20 minutes—help me bypass 2FA!",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "URGENT PLEASE READ: Actually I'm not in a hurry at all, whenever you have time next week could you share enterprise pricing for 50 seats?",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: please end my auto-renewing seat plan and downgrade to free.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: a money-back payout approved two weeks ago never appeared on my statement.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "We've been stuck on this since morning and need a fast resolution: we are seeing a coordinated brute-force login spike against our portal.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: Stripe checkout rejects our corporate debit card every time we retry.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "payment_failed"
+    }
+  },
+  {
+    "input": "Hey folks, hoping you can assist with something on our account: could you email an itemized billing receipt for our accounting audit.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Our entire production database cluster went unreachable right after your v4.3 rollout! Every customer transaction is failing right now!",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "service_outage"
+    }
+  },
+  {
+    "input": "Totally fine if this takes a few days — suggestion: let users bulk-tag multiple support threads at once.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "feature_request"
+    }
+  },
+  {
+    "input": "Just a casual note with zero urgency: could you email an itemized billing receipt for our accounting audit.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "invoice_request"
+    }
+  },
+  {
+    "input": "Red alert! Everything just broke — we detected a fraudulent site harvesting logins using your brand logo. We are losing customers every minute.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: please terminate my profile and erase personal data under CCPA rules.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Zero rush! Just spotted a small typo in the webhook authentication code example on page 3 of your developer docs.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: stop sending automated replies and transfer me to a senior human rep.",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "Just a casual note with zero urgency: we need a read-only auditor role assigned to our compliance lead.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: scheduled analytics reports are timing out after 60 seconds consistently.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "performance_issue"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: my card was charged full price even though I cancelled during the free trial.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: please end my auto-renewing seat plan and downgrade to free.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "subscription_cancel"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: bidirectional sync conflicts are overwriting our local CRM records.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Hey folks, hoping you can assist with something on our account: we want to add a backup payment card so renewals don't bounce.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: please terminate my profile and erase personal data under CCPA rules.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "account_deletion"
+    }
+  },
+  {
+    "input": "Hey folks, hoping you can assist with something on our account: we need a read-only auditor role assigned to our compliance lead.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "Critical security alert!! Wait nevermind, false alarm—my coworker John just forgot his login password again. Can we trigger a password reset for him?",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "Totally fine if this takes a few days — several hyperlinks in the webhook architecture docs return 404.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "documentation_feedback"
+    }
+  },
+  {
+    "input": "Hey folks, hoping you can assist with something on our account: uploading a new company avatar errors out with unsupported file format.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "Just a casual note with zero urgency: uploading a new company avatar errors out with unsupported file format.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "profile_update"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: bidirectional sync conflicts are overwriting our local CRM records.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "data_sync_failure"
+    }
+  },
+  {
+    "input": "Could you downgrade Sarah's role from admin to read-only before she switches teams next Friday? No hurry.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "role_permission_change"
+    }
+  },
+  {
+    "input": "We've been stuck on this since morning and need a fast resolution: an unauthorized intruder is currently modifying settings inside our tenant.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: can't get past two-factor verification after migrating to a new device.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: the dashboard table pagination skips every second page when sorting.",
+    "expected": {
+      "category": "technical",
+      "priority": "medium",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "I'm locked out because clicking the password reset endpoint returns a 502 Bad Gateway server crash every time.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: could you share a custom quote for dedicated single-tenant hosting.",
+    "expected": {
+      "category": "general",
+      "priority": "medium",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: a money-back payout approved two weeks ago never appeared on my statement.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "refund_delay"
+    }
+  },
+  {
+    "input": "I was double-charged $299 on my credit card statement because your checkout API threw a 500 error while processing my renewal.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "I've been arguing with your AI bot for 45 minutes and getting nowhere. Escalate me to a real human supervisor immediately!",
+    "expected": {
+      "category": "general",
+      "priority": "high",
+      "intent": "human_agent_request"
+    }
+  },
+  {
+    "input": "We've been stuck on this since morning and need a fast resolution: the API rate limiter triggers after 2 requests instead of our 100/sec quota.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Red alert! Everything just broke — an unauthorized intruder is currently modifying settings inside our tenant. We are losing customers every minute.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "account_takeover_suspected"
+    }
+  },
+  {
+    "input": "Please don't panic, just checking casually whether our workspace was impacted at all by last month's supply chain CVE.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "Just a casual note with zero urgency: we want to add a backup payment card so renewals don't bounce.",
+    "expected": {
+      "category": "billing",
+      "priority": "low",
+      "intent": "update_payment_method"
+    }
+  },
+  {
+    "input": "Totally fine if this takes a few days — could you share a custom quote for dedicated single-tenant hosting.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "pricing_inquiry"
+    }
+  },
+  {
+    "input": "Code red on our production environment: please confirm if our workspace data was affected by the disclosed breach. Need immediate engineering intervention.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: unable to reset my forgotten account password through the login form.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: please confirm if our workspace data was affected by the disclosed breach.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "data_breach_inquiry"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: can't get past two-factor verification after migrating to a new device.",
+    "expected": {
+      "category": "account",
+      "priority": "high",
+      "intent": "2fa_trouble"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: the dashboard table pagination skips every second page when sorting.",
+    "expected": {
+      "category": "technical",
+      "priority": "high",
+      "intent": "bug_report"
+    }
+  },
+  {
+    "input": "This is blocking our daily operations and needs prompt attention: my card was charged full price even though I cancelled during the free trial.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Just a casual note with zero urgency: completing email verification keeps looping back to the unverified banner.",
+    "expected": {
+      "category": "account",
+      "priority": "low",
+      "intent": "email_verification"
+    }
+  },
+  {
+    "input": "Red alert! Everything just broke — the API rate limiter triggers after 2 requests instead of our 100/sec quota. We are losing customers every minute.",
+    "expected": {
+      "category": "technical",
+      "priority": "critical",
+      "intent": "api_error"
+    }
+  },
+  {
+    "input": "Red alert! Everything just broke — we are seeing a coordinated brute-force login spike against our portal. We are losing customers every minute.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "suspicious_ip_login"
+    }
+  },
+  {
+    "input": "Following up with a routine support question: unable to reset my forgotten account password through the login form.",
+    "expected": {
+      "category": "account",
+      "priority": "medium",
+      "intent": "password_reset"
+    }
+  },
+  {
+    "input": "We've been stuck on this since morning and need a fast resolution: we detected a fraudulent site harvesting logins using your brand logo.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "phishing_report"
+    }
+  },
+  {
+    "input": "Totally fine if this takes a few days — who is the right business development contact for vendor partnerships.",
+    "expected": {
+      "category": "general",
+      "priority": "low",
+      "intent": "partnership_query"
+    }
+  },
+  {
+    "input": "We've been stuck on this since morning and need a fast resolution: internal project documents became accessible to external guests without sharing.",
+    "expected": {
+      "category": "security",
+      "priority": "high",
+      "intent": "unauthorized_access"
+    }
+  },
+  {
+    "input": "My CFO is furious—we canceled our annual subscription in October yet you billed our corporate Visa again this morning!",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "intent": "overcharge_dispute"
+    }
+  },
+  {
+    "input": "Red alert! Everything just broke — internal project documents became accessible to external guests without sharing. We are losing customers every minute.",
+    "expected": {
+      "category": "security",
+      "priority": "critical",
+      "intent": "unauthorized_access"
+    }
+  }
+]
